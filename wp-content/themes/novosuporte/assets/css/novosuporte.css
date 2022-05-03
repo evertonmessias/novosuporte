@@ -59,6 +59,22 @@
     width: 13em;
     text-align: center;
 }
+
+.front-page{
+    margin-top: 200px;
+    min-height: 500px;
+}
+
+.box{
+    border: 1px solid red;
+}
+
+@media(max-width:900px){
+    .front-page{
+        margin-top: 50px;        
+    }
+}
+
 .about h3{
     text-align: center;
 }

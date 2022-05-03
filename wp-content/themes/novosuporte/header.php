@@ -151,7 +151,7 @@ $logo = get_option('portal_input_2');
       <!-- Nav-Menu -->
       <nav class="nav-menu d-none d-lg-block">        
         <ul>
-          <li id="about"><a href="/#About">Sobre</a></li>
+          <li id="about"><a href="/">Inicio</a></li>
           <li id="alunos"><a href="/alunos">Alunos</a></li>
         </ul>
       </nav>

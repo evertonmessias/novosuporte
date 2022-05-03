@@ -34,49 +34,13 @@ function portal_page_html()
 				</tr>
 			</table>
 			<span>(Ideal size: 100x100 px)</span>
+
 			
-
-			<br><br><!-- Slides *************************************** -->
-			<hr>
-
-			<h3 class="title">Slide:</h3>
-
-			<?php
-			$image111 = get_option('portal_input_111'); ?>			
-			<table>
-				<tr>
-					<td><a href="#" onclick="upload_image(1,111);" class="button button-secondary"><?php _e('Upload Image'); ?></a></td>
-					<td><input type="text" name="portal_input_111" id="portal_input_111" value="<?php echo $image111; ?>" /></td>
-					<td>&emsp;<a href="<?php echo $image111; ?>" target="_blank"><img style="height:30px" id="preview_portal_input_111" alt="preview" title="preview" src="<?php echo $image111; ?>" /></a></td>
-				</tr>
-				<tr>
-					<td>
-						<div>Título</div>
-					</td>
-					<td><input type="text" id="portal_input_112" name="portal_input_112" value="<?php echo get_option('portal_input_112'); ?>" /></td>
-				</tr>
-				<tr>
-					<td>
-						<div>Texto</div>
-					</td>
-					<td><textarea id="portal_input_113" name="portal_input_113"><?php echo get_option('portal_input_113'); ?></textarea></td>
-				</tr>
-				<tr>
-					<td>
-						<div>Botão (Nome,URL)</div>
-					</td>
-					<td><input type="text" id="portal_input_114" name="portal_input_114" value="<?php echo get_option('portal_input_114'); ?>" /></td>
-				</tr>
-			</table><br>
-
-			<br><span>(<b>Slide</b>; Tamanho ideal: 1700x500 px)</span>
-			<br><span>(<b>Botão</b>; Use <b>Nome,URL</b> separados por vírgulas.)</span>
-			
-			<br><br><!-- Texto Sobre ********************************** -->
+			<br><br><!-- Conteudo da Página Inicial ********************************** -->
 			<hr>
 
 			<label>
-				<h3 class="title">Texto Sobre: </h3>
+				<h3 class="title">Conteudo da Página Inicial: </h3>
 				<?php
 				$portal7 = get_option('portal_input_7'); 
 				wp_editor($portal7, 'portal_about_box', array('textarea_name' => 'portal_input_7'));
