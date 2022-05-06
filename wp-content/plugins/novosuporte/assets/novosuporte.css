@@ -92,3 +92,9 @@
     width: 100%;
     font-weight: 400;
 }
+#alunos_descricao_id input[type=text],
+#doutorado_descricao_id input[type=text],
+#professores_descricao_id input[type=text],
+#secretaria_descricao_id input[type=text]{
+    width: 100%;
+}

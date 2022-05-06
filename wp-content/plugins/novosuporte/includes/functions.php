@@ -63,11 +63,11 @@ add_action('admin_menu', 'wd_admin_menu_rename');
 
 
 // ***************** Add in Menu
-function menu_novosuporte()
+function menu_suporte()
 {
-	add_menu_page('Portal', 'Portal', 'edit_posts', 'novosuporte', 'function_about', 'dashicons-screenoptions', 1);
+	add_menu_page('Suporte', 'Suporte', 'edit_posts', 'suporte', 'function_about', 'dashicons-screenoptions', 1);
 }
-add_action('admin_menu', 'menu_novosuporte');
+add_action('admin_menu', 'menu_suporte');
 
 // ***************** Add About
 function function_about()
@@ -75,7 +75,6 @@ function function_about()
 	include ABSPATH . '/wp-content/plugins/novosuporte/includes/about.php';
 }
 add_action('function_about', 'function_about');
-
 
 
 // ***************** Add Media

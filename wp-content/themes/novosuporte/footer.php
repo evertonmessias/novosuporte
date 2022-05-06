@@ -7,8 +7,8 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3 class="logo mr-auto">
               <a href="/">
-                <img src="<?php echo get_option('portal_input_2'); ?>" title="novosuporte"><br><br>
-                <span>novosuporte</span>
+                <img src="<?php echo get_option('portal_input_2'); ?>" title="<?php echo get_option('portal_input_0'); ?>"><br><br>
+                <span><?php echo get_option('portal_input_0'); ?></span>
               </a>
             </h3>
             <p>
@@ -53,7 +53,7 @@
 
     <div class="container py-4">
       <div class="copyright">
-        <strong><span>novosuporte</span></strong>. All rights reserved
+        <strong><span><?php echo get_option('portal_input_0'); ?></span></strong>. All rights reserved
       </div>
       <div class="credits">
         Designed by <a href="https://ic.unicamp.br/~everton/" target="_blank">EvM</a>

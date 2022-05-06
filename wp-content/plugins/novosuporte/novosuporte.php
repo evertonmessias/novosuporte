@@ -20,24 +20,25 @@ include ABSPATH . '/wp-content/plugins/novosuporte/includes/functions.php';
 
 // TYPES ************************************************
 include ABSPATH . '/wp-content/plugins/novosuporte/includes/types/alunos.php';
+include ABSPATH . '/wp-content/plugins/novosuporte/includes/types/doutorado.php';
 
 // SETTINGS ************************************************
 include ABSPATH . '/wp-content/plugins/novosuporte/includes/settings.php';
 
-// POSTMETA POST ************************************************
-//include ABSPATH . '/wp-content/plugins/novosuporte/includes/postmeta-post.php';
+
+// ACTIVATE *************************************************
+function activate()
+{
+    remove_role('contributor');
+    remove_role('author');
+    flush_rewrite_rules();
+}
+register_activation_hook(__FILE__, 'activate');
 
 
-// OBJECTS *************************************************
-$alunos = new Alunos();
-//$historicoalunos = new historicoalunos();
-
-register_activation_hook(__FILE__, array(    
-    $alunos, 'activate',   
-    //$historicoalunos, 'activate',
-));
-
-register_deactivation_hook(__FILE__, array(
-    $alunos, 'deactivate', 
-    //$historicoalunos, 'deactivate',    
-));
+// DEACTIVATE *************************************************
+function deactivate()
+{
+    flush_rewrite_rules();
+}
+register_deactivation_hook(__FILE__, 'deactivate');

@@ -1,5 +1,5 @@
 window.onload = function () {
-    $("#adminmenu #toplevel_page_novosuporte ul li.wp-first-item a").html("Sobre"); 
+    $("#adminmenu #toplevel_page_suporte ul li.wp-first-item a").html("Sobre"); 
 }
 
 function upload_image(type, val) {   

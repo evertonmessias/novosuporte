@@ -65,7 +65,8 @@ $logo = get_option('portal_input_2');
 
     .services .icon-box:hover,
     .portfolio .portfolio-item:hover,
-    .counts .box-registration:hover {
+    .counts .box-registration:hover,
+    .box:hover {
       box-shadow: 0px 0 5px 0 <?php echo $post_color; ?>;
     }
 

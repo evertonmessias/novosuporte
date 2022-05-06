@@ -75,7 +75,7 @@ function portal_page_html()
 
 function portal_options_page()
 {
-	add_submenu_page('novosuporte', 'Pagina Inicial', 'Pagina Inicial', 'edit_posts', 'pagina-inicial', 'portal_page_html', 1);
+	add_submenu_page('suporte', 'Pagina Inicial', 'Pagina Inicial', 'edit_posts', 'pagina-inicial', 'portal_page_html', 1);
 }
 add_action('admin_menu', 'portal_options_page');
 

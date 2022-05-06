@@ -16,12 +16,12 @@ function field_alunos_descricao($post)
 <?php
 }
 
-function move_postmeta_to_top() {
+function move_postmeta_to_top_alunos() {
     global $post, $wp_meta_boxes;
     do_meta_boxes( get_current_screen(), 'alunos_descricao', $post );
     unset($wp_meta_boxes['post']['alunos_descricao']);
 }
-add_action('edit_form_after_title', 'move_postmeta_to_top');
+add_action('edit_form_after_title', 'move_postmeta_to_top_alunos');
 
 
 // SAVE ALL **********************************
